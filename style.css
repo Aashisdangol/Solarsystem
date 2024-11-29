@@ -211,7 +211,7 @@ body{
     position: relative;
     top: 49.5%;
     right: 0%;
-    animation: uranus-position linear 90s infinite reverse;
+    animation: uranus-position linear 95s infinite reverse;
 }
 @keyframes uranus-position {
     0%{
@@ -327,7 +327,7 @@ body{
     position: relative;
     top: 49.4%;
     right: 0;
-    animation: saturn-position 80s linear infinite;
+    animation: saturn-position 90s linear infinite;
 }
 @keyframes saturn-position {
     0% {
@@ -397,7 +397,7 @@ body{
     position: relative;
     top: 1%;
     right: 50%;
-    animation: jupiter-position 70s linear infinite;
+    animation: jupiter-position 85s linear infinite;
 }
 @keyframes jupiter-position {
     0% {
@@ -467,7 +467,7 @@ body{
     position: relative;
     top: 49.9%;
     right: 5.3%;
-    animation: mars-position 60s linear infinite;
+    animation: mars-position 80s linear infinite;
 
 }
 @keyframes mars-position {
@@ -538,7 +538,7 @@ body{
     position: relative;
     right: 49.5%;
     top: 0;
-    animation: earth-position 50s linear infinite reverse;
+    animation: earth-position 75s linear infinite reverse;
    
 
 }
@@ -659,7 +659,7 @@ body{
     position: relative;
     top: 47.5%;
     right: 17%;
-    animation: venus-position 40s  linear   infinite;
+    animation: venus-position 60s  linear   infinite;
 }
 
 @keyframes venus-position  {
@@ -774,7 +774,7 @@ body{
     top: -49%;
     right: 4%;
 
-    animation: mercury-position 30s linear  infinite;
+    animation: mercury-position 55s linear  infinite;
 }
 
 
