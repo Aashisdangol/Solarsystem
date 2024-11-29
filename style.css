@@ -1,14 +1,17 @@
 body{
     margin: 0;
     padding: 0;
-    /* background-image: url(./assets/background.jpg); */
+    background-image: url(./assets/background.jpg);
+    @media (max-width:700px) {
+        display:none ;
+    }
 }
 .main-container{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute ;
-    border: 1px solid rgb(0, 0, 0);
+    border: 4px dotted rgb(255, 255, 255);
     /* margin:8px; */
     border-radius: 50%;
 }
@@ -26,35 +29,111 @@ body{
     top: 49.3%;
     right: 8.1%;
 
-    animation: neptune-position 50s infinite linear;
+    animation: neptune-position 100s infinite  linear reverse;
 }
-/* @keyframes neptune-position {
+@keyframes neptune-position {
     0%{
-        top: 5vh;
-        left: 8vw;
+        top:-40.5%;
+        right:-30%;
     }
-    25%{   
-        top: 60px; 
-        left: 80vw;
+    5%{
+        top:-45.5%;
+        right:-21%;
+    }
+    10%{
+        top:-49.5%;
+        right:0%;
+    }
+    
+    15%{
+        top:-45.5% ;
+        right:21% ;
+    }
+    20%{
+        top:-40.5% ;
+        right:30%;
+    }
+    25%{
+        top:-32.5%;
+        right: 38%;
+    }
+    
+    30%{   
+        top:-13.5%; 
+        right:48%;
+        
+    }
+    35%{   
+        top:-3.5% ; 
+        right:50%;
+        
+    }
+    
+    40%{   
+        top:13.5%; 
+        right:48%;
+        
+    }
+    45%{
+        top:32.5%;
+        right:38%;
         
     }
     50%{
-        top: 55vh;
-        left: 80vw;
+        top:40.5%;
+        right:30%;
         
     }
-    75%{
-        top: 55vh;
-        left: 10vw;
+    55%{
+        top: 45.5%;
+        right:21% ;
+        
+    }
+    60%{
+        top: 49.5%;
+        right:0% ;
+        
+    }
+    65%{
+        top:45.5% ;
+        right: -21%;
 
     }
-    100%{
-        top: 60px;
-        left: 8vh;
+    70%{
+        top: 40.5% ;
+        right: -30%;
 
+    }
+    75%{
+        top:32.5%;
+        right: -38%;
     }
     
-} */
+    80%{
+        top: 13.5% ;
+        right: -48%;
+
+    }
+    85%{
+       top:3.5% ;
+        right:-50% ;
+
+    }
+    90%{
+        top: -13.5%;
+        right: -48%;
+
+    }
+    95%{
+        top: -32.5%;
+        right: -38%;
+    } 
+    100%{
+        top: -40.5%;
+        right:-30%;
+    }      
+}   
+
 
 
 .uranus{
@@ -65,9 +144,112 @@ body{
     width: 80px;
     height: 60px;
     position: relative;
-    right: 44%;
-    top: 23.8%;
+    top: 49.5%;
+    right: 0%;
+    animation: uranus-position linear 90s infinite reverse;
 }
+@keyframes uranus-position {
+    0%{
+        top:49.5%;
+        right:0%;
+    }
+    5%{
+        top:45.5%;
+        right:-21%;
+    }
+    10%{
+        top:40.5%;
+        right:-30%;
+    }
+    
+    15%{
+        top:32.5% ;
+        right:-38% ;
+    }
+    20%{
+        top:13.5% ;
+        right:-48%;
+    }
+    25%{
+        top:3.5%;
+        right: -50%;
+    }
+    
+    30%{   
+        top:-13.5%; 
+        right:-48%;
+        
+    }
+    35%{   
+        top:-32.5% ; 
+        right:-38%;
+        
+    }
+    
+    40%{   
+        top:-40.5%; 
+        right:-30%;
+        
+    }
+    45%{
+        top:-45.5%;
+        right:-21%;
+        
+    }
+    50%{
+        top:-49.5%;
+        right:0;
+        
+    }
+    55%{
+        top: -45.5%;
+        right:21% ;
+        
+    }
+    60%{
+        top: -40.5%;
+        right:30% ;
+        
+    }
+    65%{
+        top:-32.5% ;
+        right: 38%;
+
+    }
+    70%{
+        top: -13.5% ;
+        right: 48%;
+
+    }
+    75%{
+        top:-3.5%;
+        right: 50%;
+    }
+    
+    80%{
+        top: 13.5% ;
+        right: 48%;
+
+    }
+    85%{
+       top:32.5% ;
+        right: 38% ;
+
+    }
+    90%{
+        top: 40.5%;
+        right: 30%;
+
+    }
+    95%{
+        top: 45.5%;
+        right: 21%;
+    } 
+    100%{
+        top: 49.5%;
+        right:0%;
+    }      
+}   
 
 
 .saturn{
@@ -80,20 +262,132 @@ body{
     position: relative;
     top: 49.4%;
     right: 0;
+    animation: saturn-position 80s linear infinite;
+}
+@keyframes saturn-position {
+    0% {
+        top:-28.9%;
+        right:41.3%;
+    }
+    10%{
+        top: -40.9%;
+        right:28.3% ;
+    }
+    20% {
+        top: -49.9%;
+        right:5.3%  ;
+    }
+    30% {
+        top: -40.9%;
+        right: -28.3% ;
+    }
+    40% {
+        top: -28.9%;
+        right:-41.3% ;
+    }
+    50%{
+        top: -2.9% ;
+        right: -50.3% ;
+    }
+
+    60% {
+        top:28.9%;
+        right:-41.3%;
+    }
+    70%{
+        top: 40.9%;
+        right: -28.3%;
+    }
+    75% {
+        top:49.9%;
+        right:5.3% ;
+    }
+    80% {
+        top:40.9% ;
+        right:28.3%;
+    }
+    90% {
+        top:28.9%;
+        right: 41.3% ;
+    }
+    95%{
+        top:-2.9%;
+        right:50.3% ;
+    }
+    100% {
+        top:-28.9%;
+        right: 41.3% ;
+    }
 }
 
 
-.jupitar{
+.jupiter{
     width: 85%;
     height: 61vh;
 }
 
-.jupitar img{
+.jupiter img{
     width: 65px;
     height: 65px;
     position: relative;
     top: 1%;
     right: 50%;
+    animation: jupiter-position 70s linear infinite;
+}
+@keyframes jupiter-position {
+    0% {
+        top:-28.9%;
+        right:41.3%;
+    }
+    10%{
+        top: -40.9%;
+        right:28.3% ;
+    }
+    20% {
+        top: -49.9%;
+        right:5.3%  ;
+    }
+    30% {
+        top: -40.9%;
+        right: -28.3% ;
+    }
+    40% {
+        top: -28.9%;
+        right:-41.3% ;
+    }
+    50%{
+        top: -2.9% ;
+        right: -50.3% ;
+    }
+
+    60% {
+        top:28.9%;
+        right:-41.3%;
+    }
+    70%{
+        top: 40.9%;
+        right: -28.3%;
+    }
+    75% {
+        top:49.9%;
+        right:5.3% ;
+    }
+    80% {
+        top:40.9% ;
+        right:28.3%;
+    }
+    90% {
+        top:28.9%;
+        right: 41.3% ;
+    }
+    95%{
+        top:-2.9%;
+        right:50.3% ;
+    }
+    100% {
+        top:-28.9%;
+        right: 41.3% ;
+    }
 }
 
 
@@ -106,10 +400,67 @@ body{
     width: 50px;
     height: 50px;
     position: relative;
-    right: 5.3%;
     top: 49.9%;
+    right: 5.3%;
+    animation: mars-position 60s linear infinite;
 
 }
+@keyframes mars-position {
+    0% {
+        top:49.9%;
+        right: 5.3%;
+    }
+    10%{
+        top: 40.9%;
+        right: 28.3%;
+    }
+    20% {
+        top:28.9% ;
+        right: 41.3% ;
+    }
+    30% {
+        top:-2.9%;
+        right: 50.3% ;
+    }
+    40% {
+        top:-28.9% ;
+        right: 41.3%;
+    }
+    50%{
+        top: -40.9% ;
+        right: 28.3% ;
+    }
+
+    60% {
+        top:-49.9% ;
+        right:5.3%;
+    }
+    70%{
+        top: -40.9%;
+        right: -28.3%;
+    }
+    75% {
+        top:-28.9%;
+        right:-41.3% ;
+    }
+    80% {
+        top:-2.9% ;
+        right:-50.3%;
+    }
+    90% {
+        top:28.9%;
+        right: -41.3% ;
+    }
+    95%{
+        top:40.9%;
+        right:-28.3% ;
+    }
+    100% {
+        top:49.9%;
+        right: 5.3% ;
+    }
+}
+
 
 
 .earth{
@@ -122,6 +473,114 @@ body{
     position: relative;
     right: 49.5%;
     top: 0;
+    animation: earth-position 50s linear infinite reverse;
+   
+
+}
+
+@keyframes earth-position {
+    0%{
+        top:49.5%;
+ 
+        right:0%;
+    }
+    5%{
+        top:45.5%;
+        right:-21%;
+    }
+    10%{
+        top:40.5%;
+        right:-30%;
+    }
+    
+    15%{
+        top:32.5% ;
+        right:-38% ;
+    }
+    20%{
+        top:13.5% ;
+        right:-48%;
+    }
+    
+    25%{   
+        top:-13.5%; 
+        right:-48%;
+        
+    }
+    30%{   
+        top:-32.5% ; 
+        right:-38%;
+        
+    }
+    /* 35%{   
+        top:-36.5%; 
+        right:-32%;
+        
+    } */
+    40%{   
+        top:-40.5%; 
+        right:-30%;
+        
+    }
+    45%{
+        top:-45.5%;
+        right:-21%;
+        
+    }
+    50%{
+        top:-49.5%;
+        right:0;
+        
+    }
+    55%{
+        top: -45.5%;
+        right:21% ;
+        
+    }
+    60%{
+        top: -40.5%;
+        right:30% ;
+        
+    }
+    /* 65%{
+        top:-36.5% ;
+        right: 32% ;
+        
+    } */
+    70%{
+        top:-32.5% ;
+        right: 38%;
+
+    }
+    75%{
+        top: -13.5% ;
+        right: 48%;
+
+    }
+    80%{
+        top: 13.5% ;
+        right: 48%;
+
+    }
+    85%{
+       top:32.5% ;
+        right: 38% ;
+
+    }
+    90%{
+        top: 40.5%;
+        right: 30%;
+
+    }
+    /* 95%{
+        top: 45.5%;
+        right: 21%;
+    }  */
+    100%{
+        top: 49.5%;
+        right:0%;
+    }      
+    
 }
 
 
@@ -130,12 +589,113 @@ body{
     height: 25vh;
 }
 .venus img{
-    width: 90px;
-    height: 55px;
+    width: 20%;
+    height: 27.5%;
     position: relative;
-    top: 18.5%;
-    right: 45.5%;
+    top: 47.5%;
+    right: 17%;
+    animation: venus-position 40s  linear   infinite;
 }
+
+@keyframes venus-position  {
+    0%{
+        top: 47.5%;
+ 
+        right: 17%;
+    }
+    5%{
+        top: 42.5%;
+        right: 24%;
+    }
+    10%{
+        top: 32.5%;
+        right: 34%;
+    }
+    15%{
+        top:21.5% ;
+        right:43% ;
+    }
+    20%{
+        top:-0.5% ;
+        right: 48% ;
+    }
+    25%{
+        top: -21.5% ;
+        right: 43%;
+    }
+    
+    30%{   
+        top: -32.5%; 
+        right: 34%;
+        
+    }
+    40%{   
+        top: -47.5% ; 
+        right: 17%;
+        
+    }
+    45%{   
+        top: -48.5%; 
+        right: 4%;
+        
+    }
+    50%{
+        top: -47.5%;
+        right: -17%;
+        
+    }
+    55%{
+        top: -42.5%;
+        right: -24%;
+        
+    }
+    60%{
+        top: -32.5%;
+        right:-34% ;
+        
+    }
+    65%{
+        top: -21.5%;
+        right:-43% ;
+        
+    }
+    70%{
+        top:-0.5% ;
+        right: -48% ;
+        
+    }
+    75%{
+        top:21.5% ;
+        right: -43%;
+
+    }
+    80%{
+        top:32.5% ;
+        right: -34%;
+
+    }
+    85%{
+        top:42.5% ;
+        right: -24% ;
+
+    }
+    90%{
+        top:47.5% ;
+        right: -17% ;
+
+    }
+    95%{
+        top: 48.5%;
+        right: -4% ;
+
+    }
+    100%{
+        top: 47.5%;
+        right: 17%;
+    }   
+ 
+} 
+
 
 
 .mercury{
@@ -149,8 +709,10 @@ body{
     top: -49%;
     right: 4%;
 
-    animation: mercury-position 20s linear  infinite;
+    animation: mercury-position 30s linear  infinite;
 }
+
+
 
 @keyframes mercury-position  {
     0%{
@@ -183,11 +745,11 @@ body{
         right: -43%;
         
     }
-    35%{   
+    /* 35%{   
         top: 33% ; 
         right: -34%;
         
-    }
+    } */
     40%{   
         top: 33% ; 
         right: -34%;
@@ -256,11 +818,26 @@ body{
 }
 
 
-.Sun{
-    width: 13%;
-    height: 5vh;
-    background-color: #FFD700;
-    box-shadow: -3px -4px 25px 19px rgb(232, 214, 13); 
-    
-
+.Sun img{
+    width: 31%;
+    height: 9vh;
+    position: absolute;
+    top: 11%;
+    right: 31%; 
+    animation: sun-position 1s infinite;
 }
+@keyframes sun-position {
+    0% {
+        transform: rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) rotate(-360deg);
+    }
+}    
+/* @keyframes sun-position {
+    0% {
+        transform: rotate(0deg) translateX(6vw) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(6vw) rotate(-360deg);
+    } */
